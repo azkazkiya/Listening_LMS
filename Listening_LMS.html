@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listening</title>
+</head>
+<body>
+    <!-- 
+        pada bagian Listening terdapat 5 topic dan total 16 sub topic
+        1. introduction                             -> Pengenalan
+        2. How the Spoken comment Program Works     -> Bagaimana Program Komentar yang Diucapkan Bekerja
+        3. What is Speech Recognition Good for      -> Keunggulan dari Speech Recognition
+        4. Full featured speech recognition block   -> Fitur Lengkap Blok Speech Recognition 
+        5. Project                                  -> Projek
+        Quiz
+
+    
+    -->
+
+<!-- 1. Pengenalan -->
+    <!-- subjudul -->
+    <h3>Pengenalan</h3>
+
+    <!-- isi -->
+    <p>Apakah kalian tahu, lebih mudah bagi komputer untuk memulai pekerjaan dengan mengandalkan teks dan menghasilkan ucapan daripada memulai dengan ucapan dan menghasilkan teks yang sesuai? Hal ini karena biasanya lebih mudah bagi komputer untuk menghasilkan sesuatu daripada mengenalinya.</p>
+    <p>Ucapan maupun suara lainnya dapat menyebabkan getaran di udara yang menyebabkan getaran di mikrofon komputer kemudian getaran ini diubah menjadi angka. Dari angka-angka tersebutlah program mulai menentukan apa yang dikatakan. Namun perlu kita ketahui proses ini tidak sempurna dan tentunya kesalahan dapat terjadi. </p>
+
+    <br>
+
+    <!-- subjudul -->
+    <h3>Block Speech Recognition Sederhana</h3>
+
+    <!-- isi -->
+    <p>Klik pada blok berikut, ucapkan sesuatu, lalu klik pada variabel <i>"last thing heard"</i>.Jika semuanya berjalan dengan baik, kalian akan melihat apa yang baru saja diucapkan.</p>
+    
+    <p style="color: red">//disini dimasukkan snap yang judulnya “a simple block for turning speech into text”</p>
+    <p>Cobalah mengucapkan sesuatu, lihat hasilnya, klik blok tersebut lagi, ucapkan hal lain, dan lihat lagi.Jika kalian ingin mencoba bahasa lain, gunakan perintah <i> "set default language".</i> Jika memungkinkan, sistem akan menggunakan bahasa yang diberikan jika tidak ada bahasa atau suara eksplisit yang diberikan untuk perintah mendengarkan yang lebih canggih. Ada banyak cara untuk menentukan bahasa:</p>
+    <ul>
+        <li> Gunakan nama bahasa dalam bahasa Inggris</li>
+        <li> Gunakan nama bahasa dalam bahasa tersebut</li>
+        <li> Berikan kode bahasa diikuti dengan kode dialek.</li>
+
+    </ul>
+    <br>
+    <!-- subjudul -->
+    <h3>Contoh Program menggunakan Speech Recognition and Synthesis</h3>
+
+    <!-- isi -->
+    <p>Program berikut menggunakan blok <i>"listen then ..."</i> untuk mengontrol <i>sprite</i> . Kalian dapat memerintahkannya untuk maju atau berbelok ke kanan. Kemudian program akan menanyakan seberapa banyak dan melaksanakan perintah tersebut. Katakan <i> "goodbye" </i> untuk keluar dari program. Terkadang kita perlu mengulangi perkataannya. Terkadang program dapat melakukan kesalahan dalam mendengar ucapan</p>
+    <p style="color: red">// disini dimasukkan snap yang judulnya Click the green flag to to try a voice command example</p>
+    <p>Ada versi layar penuh dari program ini. Program ini mendukung banyak cara untuk mengatakan kata atau frasa perintah yang sama. Program yang berbeda mengharapkan pengguna untuk mengucapkan kalimat lengkap dan mencari angka serta kata perintah ('maju' dan 'kanan') untuk merespons. Program serupa dapat ditulis untuk mengontrol perangkat fisik seperti robot atau rangkaian lampu.</p><p>Latihan: Coba tambahkan perintah <i> "turn left" </i> ke dalam program. Apa lagi yang mungkin menyenangkan untuk dicoba? Petunjuk: bagaimana dengan mengubah ukuran, tampilan, warna, atau lainnya? Bagaimana dengan melakukan animasi sebagai respons terhadap perintah suara?</p>
+
+    <br><br>
+
+
+<!-- 2. Bagaimana Program Komentar yang Diucapkan dapat Bekerja -->
+    <!-- subjudul -->
+    <h3>Bagaimana Program Komentar yang diucapkan dapat Bekerja</h3>
+
+    <!-- isi -->
+    <p> Jika kalian mengklik <i style="color:red">(gambar panah)</i> kalian akan melihat blok-blok di balik program. Jika Kalian kemudian mengklik kanan pada "speak turtle commands" dan memilih 'edit', Kalian akan melihat program berikut.</p> <p style="color: red">//disini dimasukkan screenshot berjudul “The blocks that implement the speech command program” </p>
+    <p> Variabel "spoken" berisi apa yang baru saja dikenali. Perintah <i> if-then-else </i> bersarang pertama-tama akan menguji ucapan untuk keluar dari program, kemudian untuk gerakan maju, dan kemudian perintah berbelok. Jika tidak ada yang cocok, maka respons 'tidak dimengerti' dibuat. Baik perintah berbelok maupun bergerak menyebabkan program menanyakan jumlah untuk berbelok atau bergerak. Ketika sebuah angka diucapkan, kura-kura kemudian berbelok atau bergerak menyesuaikan.</p>
+
+
+    <br>
+    <!-- subjudul -->
+    <h3>Contoh Project</h3>
+
+    <!-- isi -->
+    <p>Program penghasil kalimat berikut dimulai dengan sebuah <i> "template" </i> kalimat acak. Program menganggap setiap kata yang diawali dengan "?" sebagai variabel yang digantikan dengan bertanya kepada pengguna untuk sesuatu. Contohnya:</p>
+    <p><i>The silly ?PLURAL-NOUN like ?ADJECTIVE bananas.</i></p>    
+    <p>Dari kalimat diatas, program meminta pengguna untuk mengucapkan <i> plural-noun </i> atau kata plural jamak dan kemudian meminta <i>adjective </i> atau kata sifat. Misalkan pengguna menjawab <i> "potatoes" </i> dan <i> "gigantic" </i>, maka program akan mengatakan</p>
+    <p><i>The silly potatoes like gigantic bananas.</i></p>
+    <p style="color: red;"> //disini dimasukkan snap berjudul “Click the green flag to generate silly sentences</p>
+    <p style="color: red;"> // disini dimasukkan Screenshot of the core of the program that asks for substitutions for words beginning with "?"</p>
+    <p>Bagian program ini melalui kalimat kata per kata, berhenti ketika sebuah kata atau frasa dimulai dengan "?". Program berhenti setelah meminta penggantian dan kemudian memanggil perintah <i>"Broadcast speech recognition results ...".</i> Kode berikutnya merespons ketika sesuatu telah didengar dan diinterpretasikan:</p>
+    <p style="color: red;">//disini dimasukkan Screenshot of the part of the program that responds to recognized words or phrases</p>
+    <p>Program tersebut mengulang apa yang didengar dan menggantikannya ke dalam daftar kata dengan menggantikan kata yang dimulai dengan "?". Contoh ini menggambarkan bagaimana menggunakan sintesis ucapan dan pengenalan untuk membuat aplikasi yang sepenuhnya verbal. Ini juga merupakan contoh program yang melintasi batas disiplin ilmu. Untuk menghasilkan kalimat yang gramatikal benar (meskipun seringkali nonsens atau lucu), diperlukan konsep-konsep tata bahasa seperti kata benda, frasa kata benda, kata kerja, kata sifat, dan kata keterangan. Masalah tentang kesepakatan jumlah dan waktu muncul secara alami. Menurut kalian bisakah program seperti ini bekerja tanpa konsep-konsep tata bahasa seperti kata benda, kata kerja, kata sifat, dll?</p>
+    <p>Sebuah program tanpa konsep tata bahasa seperti kata benda, kata kerja, atau kata sifat mungkin dapat beroperasi dalam konteks tertentu, terutama jika tujuannya adalah untuk menghasilkan hasil verbal yang tidak bergantung pada struktur gramatikal tradisional. Namun, untuk berinteraksi dengan bahasa manusia secara efektif dan menghasilkan kalimat yang dapat dimengerti dan bermakna secara umum, konsep-konsep tata bahasa sangat penting.
+        Dalam kasus seperti program contoh yang Anda tunjukkan, meskipun hasilnya mungkin terkadang tidak gramatikal secara tradisional, penggunaan kata-kata seperti <i> "plural noun" </i> atau <i> "adjective" </i> membantu dalam memberikan kerangka kerja yang diperlukan untuk mengatur informasi yang diterima dan dihasilkan secara verbal. Konsep-konsep ini membantu dalam membangun kalimat yang lebih terstruktur dan dapat dipahami, meskipun hasil akhirnya mungkin lebih bersifat kreatif atau eksperimental.</p>
+    
+    <br>
+    <!-- subjudul -->
+    <h3>Kalimat Lebih Rumit</h3>
+    <!-- isi -->
+    <p>Program berikut memperluas kalimat yang lebih rumit dengan menambahkan fitur baru. Jika program menemukan kata yang dimulai dengan "=", itu akan menggantikannya dengan respons terakhir untuk permintaan contoh kata/frasa tersebut.</p> <p style="color:red;">//dimasukkan snap berjudul “Click the green flag to generate stories based upon your answers”</p>
+    <p>Contoh, di bawah ini terdapat cerita pendek yang memakai <i> template </i> kalimat acak</p> <p><i>This is a story about ?GIRLS-NAME. =GIRLS-NAME is ?ADJECTIVE and very ?ADJECTIVE. She travelled to ?PLACE-NAME. There she met ?BOYS-NAME who was a ?OCCUPATION in =PLACE-NAME. =GIRLS-NAME and =BOYS-NAME lived ?ADVERB ever after.</i></p>
+    <p>Apabila kita merespon dengan "Juliet", "warm", "beautiful", "Verona", "Romeo", "amateur poet", dan "barely" maka ceritanya akan menjadi seperti dibawah ini</p> <p><i>This is a story about Juliet. Juliet is warm and very beautiful. She travelled to Verona. There she met Romeo who was a amateur poet in Verona. Juliet and Romeo lived barely ever after. </i></p>   
+    <br>
+
+    <!-- subjudul -->
+    <h3>Demo Tanya Jawab</h3>
+    <!-- isi -->
+     <p>Demo berikut ini mirip dengan <i> Google Assistant </i>. Demo ini meminta pengguna untuk mengatakan sesuatu dan kemudian mengirimkan kata-kata tersebut ke Wikipedia. Biasanya, ada banyak hasil yang cocok sehingga program memilih salah satunya secara acak dan mengucapkannya. </p><p style="color:red">//dimasukkan snap berjudul “Click on the app and then say a word or short phrase”</p><p style="color:red">//dimasukkan “Screen shot of the entire 'Ask Wikipedia' program”</p>
+    <br>
+
+    <!-- subjudul -->
+    <h3>Layanan Demo</h3>
+    <!-- isi -->
+    <p>Berikut ini adalah demo antarmuka ucapan yang sangat sederhana ke layanan cuaca. Program ini meminta nama kota dan mengucapkan suhu saat ini serta perkiraan cuaca. Program cuaca dapat ditingkatkan dengan berbagai cara. Misalnya, program dapat menanyakan informasi cuaca apa yang diinginkan pengguna.</p><p style="color: red;">//dimasukkan snap “click the green flag and tell it what city you want weather information.”</p>
+
+    <br><br>
+
+
+<!-- 3. Keunggulan dari Speech Recognition -->
+    <!-- subjudul -->
+    <h3>Keunggulan Speech Recognition</h3>
+    <!-- isi -->
+    <p><i>Speech Recognition</i> dapat digunakan untuk mentranskrip ucapan yang diucapkan. Mereka yang tidak dapat mengetik atau menulis dapat menggunakannya untuk berkomunikasi secara tekstual dan menghasilkan catatan serta laporan. Ada banyak konteks khusus di mana teknologi ini sangat berguna. Misalnya, dokter dapat menghasilkan transkrip percakapan dengan pasien mereka, yang dapat meningkatkan catatan medis pasien. Transkripsi otomatis memungkinkan pencarian teks dalam video dan pembuatan caption untuk video. Dipadukan dengan terjemahan, <i>Speech Recognition</i> dapat memberikan input ke layanan terjemahan dan hasilnya dapat diubah menjadi ucapan dalam bahasa lain.</p><p>Penggunaan lain dari <i>Speech Recognition</i> adalah sebagai antarmuka ke komputer atau artefak digital. Aplikasi atau robot dapat dibuat untuk menerima perintah verbal. Ini sangat memberdayakan bagi orang-orang dengan disabilitas yang tidak dapat melakukan tugas-tugas tersebut sendiri. Asisten seperti Siri dapat memberikan respons yang berguna terhadap pertanyaan yang diucapkan. Input dan output verbal dapat menjadi cara teraman untuk berkomunikasi dalam beberapa situasi seperti saat mengemudi atau memandu pesawat.</p>        
+    <br>
+
+    <!-- subjudul -->
+    <h3>Bahaya dari Speech Recognition</h3>
+    <!-- isi -->
+    <p>Seperti banyak teknologi lainnya, <i>Speech Recognition</i> dapat disalahgunakan. Ini bisa digunakan untuk memata-matai populasi secara luas. Hal ini bisa menjadi bagian dari dasar untuk menggantikan interaksi manusia dengan layanan bantuan pusat panggilan dengan komputer yang tidak memiliki pemahaman dan empati yang bisa diberikan oleh manusia. Dengan mengurangi biaya panggilan telemarketing secara drastis melalui otomatisasi, panggilan tersebut bisa menjadi suatu gangguan. Penggunaan robot pendamping untuk memberikan dukungan sosial kontroversial karena robot tersebut mungkin kurang pemahaman dan empati. Teknologi ucapan telah menjadi bagian dari mainan interaktif dan beberapa berpendapat bahwa anak-anak menjadi terlalu terikat secara emosional pada mereka.</p>
+    <p>Apakah menurut kalian manfaatnya lebih besar daripada bahayanya? Apakah ada cara untuk menghindari bahaya tersebut?</p>
+    <br>
+
+    <!-- subjudul -->
+    <h3>Bagaimana Speech Recognition Bekerja</h3>
+    <!-- isi -->
+    <p>Dimulai dengan mikrofon yang mengubah getaran di udara (yaitu, suara) menjadi angka (menggunakan sesuatu yang disebut konverter analog-ke-digital). Suara yang didigitalkan dipecah menjadi segmen pendek (seperseratus atau seperseribu detik panjangnya) dan dimasukkan ke dalam mesin pengenalan. Saat ini, yang terbaik mengandalkan jaringan saraf. Program statistik yang kompleks juga sering digunakan.</p><p>Ada banyak tantangan termasuk berbagai jenis suara, dialek, dan aksen yang mungkin dihadapi oleh mesin <i>Speech Recognition.</i> Seringkali ada suara latar belakang yang perlu dihilangkan dari sinyal.</p>
+    <p>Tantangan lainnya berasal dari kompleksitas bahasa manusia. Ada banyak kata yang merupakan homonim, kata-kata berbeda yang terdengar sama. Memisahkan ucapan menjadi kata-kata yang terpisah itu sulit. Contoh klasik adalah bagaimana <i> "recognise speech" </i> terdengar sangat mirip dengan <i> "wreck a nice beach". </i></p> <p>Saat menggunakan blok dan program contoh dalam bab ini, kita sering kali akan menemui kesalahan. Ini terkadang menggelikan, terutama ketika menyebabkan program melakukan sesuatu yang konyol. Untuk aplikasi di mana kesalahan komputer dapat menyebabkan masalah serius, antarmuka dapat dibuat sehingga meminta konfirmasi sebelum melanjutkan. Menarik untuk membandingkan kesalahan <i>Speech Recognition</i> dengan jenis dan frekuensi kesalahan yang dilakukan manusia saat mendengarkan ucapan.</p>
+    <br>
+
+    <br><br>
+
+
+<!-- 4. Fitur Lengkap Blok Speech Recognition -->
+     <!-- subjudul -->
+    <h3>Fitur Lengkap Blok Speech Recognition</h3>
+    <!-- isi -->
+    <p> Mesin <i>Speech Recognition</i> umumnya dapat melakukan lebih dari blok dasar <i> "listen then ..." </i>yang dijelaskan di atas. Kalian dapat menentukan bahasa yang diharapkan. Mesin dapat melaporkan hasil interim dan hasil alternatif. Ini juga dapat memberikan nilai 'kepercayaan' yang menunjukkan seberapa yakinnya mesin bahwa <i>Speech Recognition</i>dilakukan dengan benar. Semua fungsionalitas ini disediakan oleh blok ini:</p><p style="color: red;">//disini diselipkan snap berjudul “A full-featured block for turning speech into text.”</p>
+    <p>Argumen untuk blok ini adalah sebagai berikut (semua dapat dikosongkan):</p>
+    <ol>
+        <li>Blok yang menerima hasil interim saat mereka diproduksi.</li>
+        <li>Blok yang menerima hasil akhir.</li>
+        <li>Blok yang menerima kesalahan jika ada.</li>
+        <li>Nama bahasa (dalam bahasa Inggris atau dalam bahasa itu sendiri) atau tag bahasa IETF. </li>
+        <li>Jumlah maksimum hasil pengenalan alternatif. Jika tidak diberikan, biasanya nilainya adalah 1, meskipun mesin pengenalan dapat mengembalikan lebih sedikit hasil.</li>
+        <li>Blok yang menerima daftar hasil pengenalan alternatif.</li>
+        <li>Blok yang menerima daftar nilai kepercayaan yang sesuai dengan hasil pengenalan alternatif. Nilai 0 berarti tidak ada kepercayaan, sedangkan nilai 1 adalah kepercayaan tertinggi.</li>
+    </ol>
+    <p>Sebagai contoh, jika Anda mengatakan <i> "red" </i>, Anda akan melihat <i> "red" </i>, tetapi jika segera setelahnya Anda mengatakan "a book", Anda akan melihat <i> "red" </i> menjadi <i> "read a book".</i> Anda dapat melihat fenomena yang sama pada demo Google ini.</p>
+    <p>Ada banyak yang bisa dieksplorasi dengan opsi <i> 'language' </i>. Misalnya, jika Anda memilih 'fr-FR' (bahasa Prancis seperti yang digunakan di Prancis) dan kemudian mengatakan <i> "une deux trois quatre five six" </i>, hasilnya akan menjadi "1 2 3 4 5 6". Perhatikan bahwa ini mengenali baik bahasa Prancis maupun bahasa Inggris.</p>
+    <br>
+
+    <!-- subjudul -->
+    <h3>Ide Projek</h3>
+    <!-- isi -->
+    <p>Berikut adalah beberapa ide proyek menggunakan <i>Speech Recognition</i> <i>(Speech Syntesis and Recognition):</i></p>
+    <ul>
+        <li>Kontrol Robot: Membuat robot yang merespons perintah seperti <i> "forward", "left", "right", </i> dan <i> "stop" </i></li>
+        <li>Chatbot: Mengembangkan chatbot yang dapat berbicara tentang topik tertentu, dengan menggunakan ucapan sebagai metode inputnya.</li>
+        <li>Permainan Petualangan: Mengadaptasi permainan petualangan berbasis teks menjadi program verbal di mana pemain dapat menavigasi dunia virtual dengan mengatakan perintah seperti "jalan ke utara" atau "buka pintu". </li>
+        <li>Permainan Tebak-tebakan: Implementasi permainan di mana komputer menebak sebuah angka atau pemain menebak angka, dengan umpan balik seperti "lebih dekat" atau "lebih jauh".</li>
+        <li>Seni Interaktif: Membuat karya seni interaktif yang merespons berbeda tergantung pada apakah mereka mendengar sesuatu yang positif atau negatif, dengan menggunakan deteksi kata kunci atau analisis sentimen.</li>
+        <li>Integrasi Aplikasi Ucapan: Menggabungkan dua aplikasi ucapan di mana satu aplikasi memproses ucapan untuk bagian-bagian ucapan (seperti kata benda, kata kerja) dan aplikasi lainnya merespons berdasarkan bagian-bagian ini.</li>
+    </ul>
+    <p>diatas hanyalah beberapa ide projek yang dapat kalian bangun. Masih ada banyak aplikasi dan proyek lain yang mungkin dengan teknologi <i>Speech Recognition</i>.</p>
+    <br>
+
+
+    <br><br>
+
+
+<!-- 5. Projek -->    
+    <!-- subjudul -->
+    <h3>Tambahan Sumber</h3>
+    <!-- isi -->
+    <p class="my-2 text-center"><a href="https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition" class="font-bold text-primary" target="_blank">Dokumentasi <i>Speech Recognition</i></a> adalah deskripsi yang sangat lengkap tentang fitur <i>Speech Recognition</i> yang seharusnya didukung oleh browser (Chrome dan Edge saat ini adalah browser tersebut tetapi pengembang browser lainnya juga sedang mengembangkannya).</p>
+    <p class="my-2 text-center"><a href="https://electronics.howstuffworks.com/gadgets/high-tech-gadgets/speech-recognition.htm" class="font-bold text-primary" target="_blank"><i> How Stuff Works</i></a> memberikan penjelasan yang jelas tentang bagaimana sistem <i>Speech Recognition</i> bekerja dan apa tantangannya.</p>
+    <p class="my-2 text-center"><a href="https://en.wikipedia.org/wiki/Speech_recognition" class="font-bold text-primary" target="_blank">Wikipedia</a> juga dapat dijadikan sumber karena mencakup topik ini dengan baik</p>
+    <p class="my-2 text-center"><a href="https://ora.ox.ac.uk/objects/uuid:12124254-acce-4c11-a540-19e74530798d" class="font-bold text-primary" target="_blank">Antarmuka Pemrograman Ramah Anak untuk Layanan AI Cloud</a> adalah makalah yang membahas blok sintesis dan <i>Speech Recognition Snap!</i></p>
+    <br>
+
+    <!-- subjudul -->
+    <h3>Belajar tentang Image Input</h3>
+    <!-- isi -->
+    <p> Ayo kita menuju chapter selanjutnya, yaitu <i> Image Recognition </i></p>
+    
+    
+    
+    
+    
+    
+        <br><br><br>
+
+
+  
+</body>
+</html>
